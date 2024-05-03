@@ -12,7 +12,7 @@ class AppBarCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 150,
-      color: Colors.teal,
+      color: Colors.teal[200],
       child: Padding(
         padding: const EdgeInsets.only(left: 15, top: 10),
         child: Row(
