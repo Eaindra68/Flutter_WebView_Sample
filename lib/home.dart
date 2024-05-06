@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_test/widget/appbar_card.dart';
-import 'package:flutter_webview_test/widget/appbar_white_corner.dart';
-import 'package:flutter_webview_test/widget/check_in_card.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class HomePage extends StatefulWidget {
@@ -52,21 +50,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Column(
         children: [
-          Stack(
-            children: [
-              AppBarCard(deviceWidth: deviceWidth),
-              const Positioned(
-                top: 130,
-                child: AppBarWhiteCorner(),
-              ),
-            ],
-          ),
+          AppBarCard(deviceWidth: deviceWidth),
           const SizedBox(height: 10),
           Expanded(
-              flex: 3,
-              child: WebViewWidget(
-                controller: controller,
-              )),
+            flex: 3,
+            child: WebViewWidget(
+              controller: controller,
+            ),
+          ),
         ],
       ),
     );

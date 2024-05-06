@@ -17,7 +17,7 @@ class AppBarCard extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15, top: 10),
         child: Row(
           children: [
-            Container(
+            SizedBox(
               width: deviceWidth / 2,
               height: 80,
               child: const Column(
